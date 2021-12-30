@@ -15,10 +15,12 @@
 		</section>
 		<hr>
 		<section id="io">
-
+			<textarea id="math-input" onkeyup="update(this.value)"></textarea>
+			<textarea id="latex-output"></textarea>
+			<div id="math-container"></div>
 		</section>
 		<!-- Load JS files -->
-		<script src="js/tex-mml-chtml.js"></script>
+		<script src="js/MathJax/tex-mml-chtml.js"></script>
 		<script src="js/mml-to-latex.js"></script>
 		<script src="js/index.js"></script>
 	</body>
