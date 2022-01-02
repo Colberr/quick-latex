@@ -11,16 +11,24 @@
 	</head>
 	<body>
 		<section id="buttons">
-
+			<button onclick="changeBrackets(0)" class="selected">&Backslash;( &nbsp; &Backslash;)</button>
+			<button onclick="changeBrackets(1)">&Backslash;[ &nbsp; &Backslash;]</button>
+			<button onclick="changeBrackets(2)">&dollar; &nbsp; &dollar;</button>
+			<button onclick="changeBrackets(3)">&dollar; &dollar; &nbsp; &dollar; &dollar;</button>
+			<button onclick="changeBrackets(4)">None</button>
+			<div class="vert-rule"></div>
+			<button onclick="clearInputs()">Clear inputs</button>
+			<div class="vert-rule"></div>
+			<button onclick="copyLATEX()">Copy LATEX</button>
 		</section>
 		<hr>
 		<section id="io">
-			<textarea id="math-input" onkeyup="update(this.value)"></textarea>
-			<textarea id="latex-output"></textarea>
+			<textarea id="math-input" onkeyup="updateMath(this.value)" autocomplete="off"></textarea>
+			<textarea id="latex-output" onkeyup="updateLATEX(this.value)" autocomplete="off" readonly></textarea>
 			<div id="math-container"></div>
 		</section>
 		<!-- Load JS files -->
-		<script src="js/MathJax/tex-mml-chtml.js"></script>
+		<script src="js/MathJax/tex-mml-svg.js"></script>
 		<script src="js/mml-to-latex.js"></script>
 		<script src="js/index.js"></script>
 	</body>
