@@ -294,7 +294,11 @@ var AMsymbols = [
   { input: "tt", tag: "mstyle", atname: "mathvariant", atval: "monospace", output: "tt", tex: "mathtt", ttype: UNARY, notexcopy: true },
   { input: "mathtt", tag: "mstyle", atname: "mathvariant", atval: "monospace", output: "mathtt", tex: null, ttype: UNARY },
   { input: "fr", tag: "mstyle", atname: "mathvariant", atval: "fraktur", output: "fr", tex: "mathfrak", ttype: UNARY, notexcopy: true },
-  { input: "mathfrak", tag: "mstyle", atname: "mathvariant", atval: "fraktur", output: "mathfrak", tex: null, ttype: UNARY }
+  { input: "mathfrak", tag: "mstyle", atname: "mathvariant", atval: "fraktur", output: "mathfrak", tex: null, ttype: UNARY },
+
+  // ## CUSTOM EXTRA SYMBOLS ##
+  { input: "~", tag: "mo", output: "\u007E", tex: "sim", ttype: CONST },
+  { input: "sim", tag: "mo", output: "\u007E", tex: "sim", ttype: CONST },
 ];
 
 function compareNames(s1, s2) {
