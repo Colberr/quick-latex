@@ -34,3 +34,22 @@ textarea {
 .MathJax {
 	font-size: 2.2em !important;
 }
+
+/* Dark Mode */
+body.dark {
+	background: #333;
+}
+body.dark button {
+	background: #444;
+	color: white;
+}
+body.dark .selected {
+	background: #002ec7;
+}
+body.dark textarea {
+	background: #333;
+	color: white;
+}
+body.dark .MathJax {
+	color: white;
+}

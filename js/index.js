@@ -59,7 +59,7 @@ function updateLATEX(latexInput) {
 // PRESSING BUTTONS
 function changeBrackets(newType) {
 	// Check input is valid
-	if (!(newType in [0,1,2,3,4])) {
+	if (!(newType in [0, 1, 2, 3, 4])) {
 		return;
 	}
 
@@ -81,7 +81,7 @@ function changeBrackets(newType) {
 
 function clearInputs() {
 	document.getElementById("math-input").value = "";
-	document.getElementById("latex-output").value = "";
+	document.getElementById("latex-output").value = brackets[bracketType][0] + brackets[bracketType][1];
 }
 
 function copyLATEX() {
@@ -89,4 +89,14 @@ function copyLATEX() {
 	latexOutput.select();
 	latexOutput.setSelectionRange(0, 99999);
 	navigator.clipboard.writeText(latexOutput.value);
+}
+
+function toggleDarkMode() {
+	document.getElementsByTagName("body")[0].classList.toggle("dark");
+	var btn = document.getElementById("darkMode");
+	if (btn.innerHTML == "Light Mode") {
+		btn.innerHTML = "Dark Mode"
+	} else {
+		btn.innerHTML = "Light Mode"
+	}
 }
