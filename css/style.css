@@ -20,11 +20,11 @@
 
 textarea {
 	font-size: 1em;
-	height: 15vh;
+	height: 20vh;
 	margin: 0 0 0 1vw;
 	max-width: 350px;
 	min-width: 250px;
-	min-height: 120px;
+	min-height: 110px;
 	width: 45vw;
 }
 
@@ -32,7 +32,7 @@ textarea {
 	margin-top: 30px;
 }
 .MathJax {
-	font-size: 2.2em !important;
+	font-size: 1.8em !important;
 }
 
 /* Dark Mode */

@@ -28,7 +28,7 @@ function updateMath(mathInput) {
 	document.getElementById("latex-output").value = brackets[bracketType][0] + latexCode + brackets[bracketType][1];
 
 	// Render the LATEX as an equation and display it
-	var element = prepareEquation("\\(" + latexCode + "\\)");
+	var element = prepareEquation(brackets[bracketType%2][0] + latexCode + brackets[bracketType%2][1]);
 	document.getElementById("math-container").innerHTML = "";
 	document.getElementById("math-container").appendChild(element);
 
