@@ -299,6 +299,8 @@ var AMsymbols = [
   // ## CUSTOM EXTRA SYMBOLS ##
   { input: "~", tag: "mo", output: "\u007E", tex: "sim", ttype: CONST },
   { input: "sim", tag: "mo", output: "\u007E", tex: "sim", ttype: CONST },
+  { input: "ora", tag: "mover", output: "overrightarrow", tex: "overrightarrow", ttype: UNARY, acc: true },
+  { input: "overrightarrow", tag: "mover", output: "overrightarrow", tex: null, ttype: UNARY, acc: true }
 ];
 
 function compareNames(s1, s2) {
